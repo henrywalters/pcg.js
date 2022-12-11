@@ -1,15 +1,35 @@
-<!DOCTYPE html>
 <html>
   <head>
         <meta charset="utf-8" />
-        <title>A demo - you better change me</title>
+        <title>Product Code Generator</title>
   </head>
   <body>
-        <h1>TypeScript Library Demo</h1>
-        <button id='helloworld'>Hello World</button>
+        <h1>Product Code Generator</h1>
+        <p>This is a sample demo for integrating the Product Code Generator into a custom web application.</p>
+
+        <div class="input">
+            <label for="slug">Generator Slug</label>
+            <input type="text" id="key" value="hCOXZgOJ5p1pe2vMB0GyNvAEW3SI5EFpnfh4" />
+            <input type="text" id="slug" value="Demo" />
+            <button id="submit">Load</button>
+        </div>
+
+        <div class="code">
+            <code>
+
+            </code>
+        </div>
+        <div class="output">
+            <p class="hidden" id="loading">Loading Generator...</p>
+            <p class="hidden" style="color: red" id="error">Error</p>
+            <div id="generator"></div>
+            <div id="code-container" class="hidden">
+                <p><b>Code: </b><span id="code"></span></p>
+            </div>
+        </div>
   </body>
   <footer>
         <script src="./index.js"></script>
-        <style src='./index.css'></style>
+        <link rel="stylesheet" href='./index.css' />
   </footer>
 </html>
